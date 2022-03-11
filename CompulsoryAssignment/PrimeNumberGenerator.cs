@@ -2,9 +2,9 @@ using System.Diagnostics;
 
 namespace CompulsoryAssignment
 {
-    public partial class Form1 : Form
+    public partial class PrimeNumberGenerator : Form
     {
-        public Form1()
+        public PrimeNumberGenerator()
         {
             InitializeComponent();
         }

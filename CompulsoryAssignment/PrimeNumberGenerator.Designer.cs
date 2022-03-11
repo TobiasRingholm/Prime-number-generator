@@ -1,6 +1,6 @@
 ﻿namespace CompulsoryAssignment
 {
-    partial class Form1
+    partial class PrimeNumberGenerator
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,9 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PrimeNumberGenerator));
             this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -40,7 +39,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -56,15 +54,6 @@
             this.label10.Size = new System.Drawing.Size(489, 80);
             this.label10.TabIndex = 37;
             this.label10.Text = resources.GetString("label10.Text");
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(13, 261);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(0, 20);
-            this.label9.TabIndex = 36;
-            this.label9.Visible = false;
             // 
             // listBox2
             // 
@@ -152,14 +141,6 @@
             this.label2.TabIndex = 26;
             this.label2.Text = "Start value";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(14, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 20);
-            this.label1.TabIndex = 25;
-            // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(14, 188);
@@ -216,7 +197,6 @@
             this.ClientSize = new System.Drawing.Size(510, 615);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.listBox2);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label8);
@@ -226,7 +206,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button2);
@@ -245,7 +224,6 @@
         #endregion
 
         private Label label10;
-        private Label label9;
         private ListBox listBox2;
         private ListBox listBox1;
         private Label label8;
@@ -255,7 +233,6 @@
         private Label label4;
         private Label label3;
         private Label label2;
-        private Label label1;
         private TextBox textBox2;
         private TextBox textBox1;
         private Button button2;
