@@ -8,9 +8,9 @@ namespace CompulsoryAssignment
         {
             InitializeComponent();
         }
+
         private List<long> list1;
         private List<long> list2;
-        private object myLock = new();
 
         private async void button2_Click(object sender, EventArgs e)
         {
@@ -34,8 +34,6 @@ namespace CompulsoryAssignment
                         };
 
                     Task.WaitAll(tasks);
-
-
                 });
                 stopwatch.Stop();
 
@@ -66,12 +64,6 @@ namespace CompulsoryAssignment
             }
             button2.Enabled = true;
         }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private async void button1_Click(object sender, EventArgs e)
         {
             button1.Enabled = false;
@@ -121,6 +113,10 @@ namespace CompulsoryAssignment
                 label11.Visible = true;
             }
             button1.Enabled = true;
+        }
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

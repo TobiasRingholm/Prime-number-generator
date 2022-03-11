@@ -14,22 +14,17 @@ namespace CompulsoryAssignment
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new PrimeNumberGenerator());
-
-            //ComparePerformance(1, 29);
-            //ComparePerformance(1, 29);
-            //Console.ReadKey();
         }
 
         public static void TaskThird()
         {
-            ComparePerformance(1, 1000000);
-            ComparePerformance(1, 10000000);
-            ComparePerformance(10000000, 20000000);
-            ComparePerformance(100000000, 200000000);
+            ComparePerformanceAndCheckIfListsAreEqual(1, 1000000);
+            ComparePerformanceAndCheckIfListsAreEqual(1, 10000000);
+            ComparePerformanceAndCheckIfListsAreEqual(10000000, 20000000);
+            ComparePerformanceAndCheckIfListsAreEqual(100000000, 200000000);
         }
 
-
-        public static void ComparePerformance(long start, long end)
+        public static void ComparePerformanceAndCheckIfListsAreEqual(long start, long end)
         {
             var stopwatch = new Stopwatch();
 
@@ -52,7 +47,6 @@ namespace CompulsoryAssignment
         {
             var primesParallelList = new List<long>();
             object myLock = new();
-
             Parallel.For(first, last + 1, i =>
             {
                 if (i != 1)
@@ -79,12 +73,10 @@ namespace CompulsoryAssignment
             return primesParallelList;
         }
 
-
         //Sequential Function
         public static List<long> GetPrimesSequential(long first, long last)
         {
             var primesSequentialList = new List<long>();
-
             while (first <= last)
             {
                 if (first != 1)
